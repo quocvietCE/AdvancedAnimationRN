@@ -4,6 +4,8 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
 
 import HeadphoneCarousel from '../pages/headphoneCarousel';
+import Carousel3D from '../pages/carousel3D';
+import NavigationPage from '../pages/navigatePage';
 
 const theme = {
   ...DefaultTheme,
@@ -22,8 +24,10 @@ const Navigation = () => {
         screenOptions={{
           headerShown: false,
         }}
-        initialRouteName={'HeadphoneCarousel'}>
+        initialRouteName={'NavigationPage'}>
+        <Stack.Screen name="NavigationPage" component={NavigationPage} />
         <Stack.Screen name="HeadphoneCarousel" component={HeadphoneCarousel} />
+        <Stack.Screen name="Carousel3D" component={Carousel3D} />
       </Stack.Navigator>
     </NavigationContainer>
   );

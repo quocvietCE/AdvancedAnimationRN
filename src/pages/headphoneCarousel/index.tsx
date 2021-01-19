@@ -101,7 +101,7 @@ const Circle = ({scrollX}) => {
 
 const Item = ({imageUri, heading, description, index, scrollX}) => {
   const inputRange = [(index - 1) * width, index * width, (index + 1) * width];
-  console.log('inputRange: ', inputRange);
+  // console.log('inputRange: ', inputRange);
   const inputRangeOpacity = [
     (index - 0.3) * width,
     index * width,
