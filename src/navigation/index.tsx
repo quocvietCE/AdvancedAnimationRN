@@ -6,6 +6,8 @@ import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
 import HeadphoneCarousel from '../pages/headphoneCarousel';
 import Carousel3D from '../pages/carousel3D';
 import NavigationPage from '../pages/navigatePage';
+import AnimatedTabIndicator from '../pages/animatedTabIndicator';
+import OnBoardScreen from '../pages/onBoardScreen';
 
 const theme = {
   ...DefaultTheme,
@@ -28,6 +30,11 @@ const Navigation = () => {
         <Stack.Screen name="NavigationPage" component={NavigationPage} />
         <Stack.Screen name="HeadphoneCarousel" component={HeadphoneCarousel} />
         <Stack.Screen name="Carousel3D" component={Carousel3D} />
+        <Stack.Screen
+          name="AnimatedTabIndicator"
+          component={AnimatedTabIndicator}
+        />
+        <Stack.Screen name="OnBoardScreen" component={OnBoardScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

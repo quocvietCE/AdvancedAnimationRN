@@ -12,6 +12,14 @@ const NavigatePage = ({navigation}) => {
     navigation.navigate('Carousel3D');
   }, [navigation]);
 
+  const navigateAnimatedTabsAndIndicator = useCallback(() => {
+    navigation.navigate('AnimatedTabIndicator');
+  }, [navigation]);
+
+  const navigateToOnBoardScreen = useCallback(() => {
+    navigation.navigate('OnBoardScreen');
+  }, [navigation]);
+
   return (
     <View style={styles.container}>
       <Text>Animated Page</Text>
@@ -23,6 +31,16 @@ const NavigatePage = ({navigation}) => {
 
       <Pressable style={styles.btnNavigation} onPress={navigateToCarousel3D}>
         <Text style={styles.title}>Carousel 3D</Text>
+      </Pressable>
+
+      <Pressable
+        style={styles.btnNavigation}
+        onPress={navigateAnimatedTabsAndIndicator}>
+        <Text style={styles.title}>Animated Tabs & Animated Indicator</Text>
+      </Pressable>
+
+      <Pressable style={styles.btnNavigation} onPress={navigateToOnBoardScreen}>
+        <Text style={styles.title}>Onboard Screen</Text>
       </Pressable>
     </View>
   );

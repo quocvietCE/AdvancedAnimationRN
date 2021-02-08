@@ -3,7 +3,7 @@ import {StatusBar} from 'react-native';
 
 import Navigation from './src/navigation';
 
-const App: () => React$Node = () => {
+const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
